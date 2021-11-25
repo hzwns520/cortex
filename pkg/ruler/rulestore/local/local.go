@@ -26,6 +26,8 @@ func (cfg *Config) RegisterFlagsWithPrefix(prefix string, f *flag.FlagSet) {
 	f.StringVar(&cfg.Directory, prefix+"local.directory", "", "Directory to scan for rules")
 }
 
+// change by huangzhengwei
+
 // Client expects to load already existing rules located at:
 //  cfg.Directory / userID / namespace
 type Client struct {
